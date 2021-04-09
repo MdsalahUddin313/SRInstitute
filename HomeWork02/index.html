@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 02</title>
+        <link rel="stylesheet" >
+        <style>
+            body{
+                background-image: url("https://www.awakenthegreatnesswithin.com/wp-content/uploads/2018/08/Nature-Quotes-1.jpg");
+                background-repeat: no-repeat;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+            .container{
+                position: absolute;
+                padding:5px;
+                width:350px;
+                background-color: aqua;
+                opacity:0.7;
+                border-radius:15px;
+                border: 1px solid rgb(118, 118, 245);
+                box-shadow: 5px 4px 10px 1px rgb(199, 198, 198);
+                margin: auto;      
+                padding:55px;      
+                position:relative;   
+
+            }
+            .container h1,label{
+                text-align: center;
+                color: rgb(33, 6, 153);
+                padding-bottom: 15px;
+            }
+            .edit_text{
+                border-top: 0px white;
+                border-left: 0px white;
+                border-right: 0px white;
+                border-bottom: 2px solid rgb(118, 118, 245);
+                border-radius:15px;
+                padding:5px;
+                width: 100%;
+                margin-top: 15px;
+                background-color: rgb(149, 250, 250);
+                transition: 1s;
+            }
+            .btn_submit{
+                background-color:rgb(34, 201, 34);
+                padding: 10px 25px;
+                border: 1px solid rgb(114, 243, 114);
+                border-radius: 35px;
+                text-align: center;
+                
+            }
+            .btn_submit:hover{
+                background-color:rgb(114, 243, 114);
+                padding: 10px 26px;
+                border: 1px solid rgb(11, 109, 11);
+                border-radius: 35px;
+            }
+            .btn_submit a{
+                color: white;
+                text-decoration: none;
+            }
+            .body_part{
+                margin: 55px 0px;
+            }
+            .image_part{
+                width: 10%;
+                border-radius: 50%;                               
+                height: 130px;
+                margin-bottom: -70px;
+                position: relative;
+                z-index: 2;
+                border-right: 3px solid rgb(99, 99, 236);
+                border-bottom: 3px solid rgb(99, 99, 236);
+                
+                
+
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center" class="body_part">
+            <img class="image_part" src="https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png" alt="Image">  
+
+            <form align="left" class="container"> 
+
+                <h1>SignUp form</h1>  
+                         
+                <label for="Fname">First Name</label><br/>
+                <input type="text" class="edit_text" name="Fname" id="Fname" placeholder="First Name"/><br/><br/><br/>
+           
+                <label for="Lname">Last Name</label><br/>
+                <input class="edit_text" type="text" name="Lname" id="Lname" placeholder="Last Name"/><br/><br/><br/>
+           
+        
+                <label for="email">Email </label><br/>
+                <input class="edit_text" type="email" name="email" id="email" placeholder="Email"/><br/><br/><br/>
+           
+        
+                <label for="password">password</label><br/>
+                <input class="edit_text" type="password" name="password" id="password" placeholder="Password"/><br/><br/><br/>
+                <label for="Cpassword">Confirm password</label><br/>
+                <input class="edit_text" type="password" name="Cpassword" id="Cpassword" placeholder="Confirm Password"/><br/><br/><br/>
+           
+                <h6>Birth Date</h6>
+                <label for="date">Choose a Date:</label>
+        
+                <select name="date" id="date">
+                  <option>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                </select> 
+        
+                <select name="month" id="month">
+                    <option>month</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                   
+                  </select> 
+        
+                  <select name="year" id="year">
+                    <option>year</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                  
+                  </select> 
+        
+                <br/><br/><br/>
+        
+        
+        
+        
+                <input type="radio" id="male" name="gender" value="male">
+               <label for="male">Male</label>
+               <input type="radio" id="female" name="gender" value="female">
+               <label for="female">Female</label><br><br/><br/>      
+               
+               <button class="btn_submit" type="submit"><a href="#" target="blank">Submit</a></button>
+               <br/><br/><br/>
+            
+            </form>
+        </div>
+
+    </body>
+</html>
